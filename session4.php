@@ -1,14 +1,4 @@
-<?php
 
-print_r($_FILES);
-
-$image_name = rand(1,100) . $_FILES["image"]["name"];
-
-$image_tmp_name = $_FILES["image"]["tmp_name"];
-
-move_uploaded_file($image_tmp_name,"./myimage/$image_name");
-
-?>
 
 <!doctype html>
 <html lang="en">
